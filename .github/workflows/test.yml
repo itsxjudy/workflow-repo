@@ -5,5 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - id: step-zero
+        name: workflow-test
         run: |
-          echo "Hello World! $(date)"
+          echo "Hello Judy! $(date)"
