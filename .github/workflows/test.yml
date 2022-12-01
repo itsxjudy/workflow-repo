@@ -10,5 +10,11 @@ jobs:
           echo "Hello Judy! $(date)"
       - id: step-one
         name: workflow-test-2
+        run: echo "Second step"
+      - id: firstStep
+        name: Hello world
+        uses: actions/hello-world-javascript-action@v1
+        with:
+          who-to-greet: "World"
         run: |
           echo "Second Step"
