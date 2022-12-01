@@ -8,3 +8,7 @@ jobs:
         name: workflow-test
         run: |
           echo "Hello Judy! $(date)"
+      - id: step-one
+        name: workflow-test-2
+        run: |
+          echo "Second Step"
